@@ -1,5 +1,5 @@
 .socials img {
-  width: 100px;
+  width: 90px;
   padding: 10px;
   filter: drop-shadow(0 0 0.75rem var(--bg-color));
 }
@@ -32,7 +32,7 @@ hr {
 p {
   color: var(--accent-color);
   font-size: 20px;
-  margin-top: 10px
+  margin-top: 5px
 }
 
 .socials {
