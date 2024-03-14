@@ -1,0 +1,95 @@
+.contact-wrapper {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 80px auto;
+}
+
+h1 {
+  color: var(--action-color);
+  font-weight: normal;
+  font-size: 50px;
+}
+
+hr {
+  border: 3px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+p {
+  color: var(--accent-color);
+  padding-top: 10px;
+  font-size: 25px;
+}
+
+/* FORM */
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-top: 50px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  font-size: 25px;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  width: 49%;
+  color: var(--bg-color);
+}
+
+textarea {
+  font-size: 25px;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  color: var(--bg-color);
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--bg-color);
+}
+
+button {
+  width: 200px;
+  margin: auto;
+  font-size: 25px;
+  padding: 5px;
+  border: 1px solid var(--action-color);
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  transition: 0.3s all;
+}
+
+button:hover {
+  background-color: var(--action-color);
+  color: var(--bg-color);
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border-color: red;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+}

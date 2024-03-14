@@ -1,1 +1,32 @@
-<p>contact works!</p>
+<div class="contact-wrapper">
+  <h1>Get in touch</h1>
+  <hr>
+  <p>
+    If you're interested in collaborating, feel free to reach out to me directly 
+    via the form provided below or through the socials.
+  </p>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="input-wrapper">
+      <input 
+      type="text"
+      name="name"
+      required
+      formControlName="name"
+      placeholder="Name">
+    <input 
+      type="email"
+      name="email"
+      required
+      formControlName="email"
+      placeholder="Email">
+    </div>
+    <textarea 
+      cols="30" 
+      rows="10"
+      name="message"
+      required
+      formControlName="message"
+      placeholder="Message"></textarea>
+    <button [disabled]="!form.valid" type="submit">Send Email</button>
+  </form>
+</div>
