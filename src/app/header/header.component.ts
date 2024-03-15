@@ -38,6 +38,9 @@ export class HeaderComponent implements OnInit{
 
   onOpen() {
     this.isOpen = !this.isOpen;
-    scrollTo(0, 0);
+    setTimeout(() => {
+      scrollTo(0, 0);
+    }, 300)
+    
   }
 }
