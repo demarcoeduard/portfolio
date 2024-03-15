@@ -1,7 +1,14 @@
 <div class="nav-bar">
-  <nav class="navigation">
+  <nav class="navigation" *ngIf="isScreenLarge">
     <a routerLink="about" routerLinkActive="active">About</a>
-    <img routerLink="home" [src]="imagePath">
+    <img routerLink="home" [src]="imagePath" alt="logo">
     <a routerLink="contact" routerLinkActive="active">Contact</a>
   </nav>
+  <img routerLink="home" [src]="imagePath" *ngIf="!isScreenLarge" alt="logo">
+  <img class="icon" src="assets/bars.svg" alt="menu icon" *ngIf="!isScreenLarge && !isOpen" (click)="onOpen()">
+  <img class="icon close" src="assets/close.svg" alt="close icon" *ngIf="!isScreenLarge && isOpen" (click)="onOpen()">
 </div>
+<nav class="menu-navigation" *ngIf="isOpen">
+  <a routerLink="about" routerLinkActive="active">About</a>
+  <a routerLink="contact" routerLinkActive="active">Contact</a>
+</nav>

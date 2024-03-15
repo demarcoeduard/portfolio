@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit{
   imagePath = '';
+  isScreenLarge = true;
+  isOpen = false;
 
   constructor(private router: Router) {}
 
@@ -18,7 +20,24 @@ export class HeaderComponent implements OnInit{
       } else {
         this.imagePath = 'assets/logo.png';
       }
+
+      this.isOpen = false;
     })
+
+    this.showMenu();
   }
 
+  @HostListener('window:resize') showMenu() {
+    if (window.innerWidth <= 800) {
+      this.isScreenLarge = false;
+    } else {
+      this.isScreenLarge = true;
+      this.isOpen = false;
+    }
+  }
+
+  onOpen() {
+    this.isOpen = !this.isOpen;
+    scrollTo(0, 0);
+  }
 }
