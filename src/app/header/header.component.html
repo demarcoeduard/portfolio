@@ -9,6 +9,7 @@
   <img class="icon close" src="assets/close.svg" alt="close icon" *ngIf="!isScreenLarge && isOpen" (click)="onOpen()">
 </div>
 <nav class="menu-navigation" *ngIf="isOpen">
+  <a routerLink="home" routerLinkActive="active">Home</a>
   <a routerLink="about" routerLinkActive="active">About</a>
   <a routerLink="contact" routerLinkActive="active">Contact</a>
 </nav>
