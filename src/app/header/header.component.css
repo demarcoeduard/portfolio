@@ -145,4 +145,8 @@ a {
   .menu-navigation {
     margin-top: 70px;
   }
+
+  .menu-navigation a {
+    font-size: 25px;
+  }
 }

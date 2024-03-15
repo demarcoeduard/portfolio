@@ -300,7 +300,7 @@ h4 {
   }
 
   .hero-wrapper p {
-    margin-top: 50px;
+    margin-top: 80px;
   }
 
   .hero-wrapper img {
@@ -365,7 +365,7 @@ h4 {
   }
 
   .hero-wrapper p {
-    margin-top: 35px;
+    margin-top: 60px;
   }
 
   .hero-wrapper img {
@@ -376,6 +376,7 @@ h4 {
 
   .about-wrapper {
     width: 300px;
+    margin-top: 80px;
   }
 
   .about-wrapper img {
@@ -412,11 +413,17 @@ h4 {
   }
 
   .hero-wrapper p {
-    margin-top: 25px;
+    margin-top: 40px;
   }
 
   .hero-wrapper img {
     width: 20px;
+  }
+
+  /* ABOUT SECTION */
+
+  .about-wrapper {
+    margin-top: 60px;
   }
 
   /* SKILLS SECTION */

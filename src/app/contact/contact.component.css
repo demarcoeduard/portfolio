@@ -62,10 +62,9 @@ input::placeholder, textarea::placeholder {
 }
 
 button {
-  width: 200px;
   margin: auto;
   font-size: 25px;
-  padding: 5px;
+  padding: 5px 10px; 
   border: 1px solid var(--action-color);
   border-radius: 5px;
   cursor: pointer;
@@ -92,4 +91,61 @@ button:disabled {
 button:disabled:hover {
   background-color: var(--primary-color);
   color: var(--accent-color);
+}
+
+@media (width <= 850px) {
+  .contact-wrapper {
+    width: 600px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 19px;
+  }
+
+  /* FORM */
+
+  form{
+    margin-top: 40px;
+  }
+
+  input, textarea {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 23px;
+  }
+}
+
+@media (width <= 650px) {
+  .contact-wrapper {
+    width: 400px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  /* FORM */
+
+  form{
+    margin-top: 30px;
+  }
+
+  input, textarea {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  button {
+    font-size: 20px;
+  }
 }
