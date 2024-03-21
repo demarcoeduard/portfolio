@@ -10,11 +10,28 @@
   text-align: center;
 }
 
-h1, h3 {
-  text-align: center;
+.title {
+  color: var(--action-color);
+  font-size: 115px;
+  padding-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 65px;
+  padding-top: 10px;
+}
+
+.subtext {
+  font-size: 40px;
+  width: 1000px;
+  margin: 50px auto;
+  margin-top: 200px;
+}
+
+h1 {
   color: var(--accent-color);
+  text-align: center;
   font-weight: normal;
-  margin: auto;
 }
 
 span {
@@ -26,39 +43,6 @@ span {
   margin: auto;
   border: 5px solid var(--primary-color);
   border-radius: 5px;
-}
-
-h3 {
-  font-size: 36px;
-  padding-top: 5px;
-  width: 1350px;
-}
-
-.hero-wrapper p {
-  margin-top: 250px;
-  text-align: center;
-  color: var(--accent-color);
-}
-
-.hero-wrapper img {
-  width: 50px;
-  margin: auto;
-  animation: 3s up-and-down infinite;
-  z-index: -1;
-}
-
-@keyframes up-and-down {
-  0% {
-    transform: translateY(0%);
-  }
-
-  50% {
-    transform: translateY(100%);
-  }
-
-  0% {
-    transform: translateY(0%);
-  }
 }
 
 /* ABOUT SECTION */
@@ -162,20 +146,21 @@ h4 {
     font-size: 30px;
   }
 
-  .hero-wrapper hr, h3 {
-    width: 1160px;
-  }
-  
-  h3 {
-    font-size: 31px;
+  .hero-wrapper hr {
+    width: 1150px;
   }
 
-  .hero-wrapper p {
-    margin-top: 200px;
+  .title {
+    font-size: 98px;
   }
 
-  .hero-wrapper img {
-    width: 45px;
+  .subtitle {
+    font-size: 55px;
+  }
+
+  .subtext {
+    font-size: 35px;
+    width: 850px;
   }
 
   /* SKILLS SECTION */
@@ -198,20 +183,21 @@ h4 {
     font-size: 25px;
   }
 
-  .hero-wrapper hr, h3 {
-    width: 965px;
+  .hero-wrapper hr {
+    width: 950px;
   }
 
-  h3 {
-    font-size: 26px;
+  .title {
+    font-size: 80px;
   }
 
-  .hero-wrapper p {
-    margin-top: 150px;
+  .subtitle {
+    font-size: 45px;
   }
 
-  .hero-wrapper img {
-    width: 40px;
+  .subtext {
+    font-size: 30px;
+    width: 750px;
   }
 
   /* ABOUT SECTION */
@@ -249,23 +235,23 @@ h4 {
   
   .hero-wrapper {
     font-size: 20px;
-    margin-top: 250px;
   }
 
-  .hero-wrapper hr, h3 {
-    width: 775px;
+  .hero-wrapper hr {
+    width: 750px;
   }
 
-  h3 {
-    font-size: 21px;
+  .title {
+    font-size: 63px;
   }
 
-  .hero-wrapper p {
-    margin-top: 100px;
+  .subtitle {
+    font-size: 35.5px;
   }
 
-  .hero-wrapper img {
-    width: 35px;
+  .subtext {
+    font-size: 25px;
+    width: 600px;
   }
 
   /* ABOUT SECTION */
@@ -299,23 +285,23 @@ h4 {
   
   .hero-wrapper {
     font-size: 15px;
-    margin-bottom: 450px;
   }
 
-  .hero-wrapper hr, h3 {
-    width: 580px;
+  .hero-wrapper hr {
+    width: 550px;
   }
 
-  h3 {
-    font-size: 17px;
+  .title {
+    font-size: 47px;
   }
 
-  .hero-wrapper p {
-    margin-top: 80px;
+  .subtitle {
+    font-size: 26.5px;
   }
 
-  .hero-wrapper img {
-    width: 30px;
+  .subtext {
+    font-size: 20px;
+    width: 500px;
   }
 
   /* ABOUT SECTION */
@@ -370,20 +356,21 @@ h4 {
     font-size: 12px;
   }
 
-  .hero-wrapper hr, h3 {
-    width: 465px;
+  .hero-wrapper hr {
+    width: 450px;
   }
 
-  h3 {
+  .title {
+    font-size: 38px;
+  }
+
+  .subtitle {
+    font-size: 21.5px;
+  }
+
+  .subtext {
     font-size: 17px;
-  }
-
-  .hero-wrapper p {
-    margin-top: 60px;
-  }
-
-  .hero-wrapper img {
-    width: 25px;
+    width: 400px;
   }
 
   /* ABOUT SECTION */
@@ -410,32 +397,23 @@ h4 {
   
   .hero-wrapper {
     font-size: 19.5px;
-    margin-left: 10px;
-    margin-top: 0px;
-  }
-
-  .hero-wrapper h1 {
-    margin: 0%;
-    text-align: left;
-  }
-
-  .hero-wrapper hr, h3 {
-    width: 395px;
-    margin: 0%;
-    text-align: left;
-    font-size: 41px;
   }
 
   .hero-wrapper hr {
-    margin-top: 10px;
+    width: 400px;
   }
 
-  .hero-wrapper p {
-    margin-top: 40px;
+  .title {
+    font-size: 34px;
   }
 
-  .hero-wrapper img {
-    width: 20px;
+  .subtitle {
+    font-size: 19px;
+  }
+
+  .subtext {
+    font-size: 15px;
+    width: 350px;
   }
 
   /* SKILLS SECTION */
