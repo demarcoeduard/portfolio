@@ -140,6 +140,9 @@ h4 {
 
 @media (width <= 1400px) {
   /* HERO SECTION */
+  .hero-wrapper {
+    margin-bottom: 350px;
+  }
 
   .title {
     font-size: 98px;
@@ -173,6 +176,10 @@ h4 {
 
 @media (width <= 1200px) {
   /* HERO SECTION */
+
+  .hero-wrapper {
+    margin-bottom: 300px;
+  }
 
   .title {
     font-size: 80px;
@@ -223,6 +230,10 @@ h4 {
 
 @media (width <= 1000px) {
   /* HERO SECTION */
+
+  .hero-wrapper {
+    margin-bottom: 250px;
+  }
   
   .title {
     font-size: 63px;
@@ -269,6 +280,10 @@ h4 {
 
 @media (width <= 800px) {
   /* HERO SECTION */
+
+  .hero-wrapper {
+    margin-bottom: 200px;
+  }
 
   .title {
     font-size: 47px;
@@ -335,6 +350,10 @@ h4 {
 @media (width <= 600px) {
   /* HERO SECTION */
 
+  .hero-wrapper {
+    margin-bottom: 150px;
+  }
+
   .title {
     font-size: 38px;
   }
@@ -373,7 +392,11 @@ h4 {
 
 @media (width <= 500px) {
   /* HERO SECTION */
-  
+
+  .hero-wrapper {
+    margin-bottom: 100px;
+  }
+
   .title {
     font-size: 34px;
   }
