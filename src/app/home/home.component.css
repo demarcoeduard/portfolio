@@ -1,7 +1,6 @@
 /* HERO SECTION */
 
 .hero-wrapper {
-  font-size: 35px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,7 +17,7 @@
 
 .subtitle {
   font-size: 65px;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .subtext {
@@ -142,14 +141,6 @@ h4 {
 @media (width <= 1400px) {
   /* HERO SECTION */
 
-  .hero-wrapper {
-    font-size: 30px;
-  }
-
-  .hero-wrapper hr {
-    width: 1150px;
-  }
-
   .title {
     font-size: 98px;
   }
@@ -161,6 +152,10 @@ h4 {
   .subtext {
     font-size: 35px;
     width: 850px;
+  }
+
+  .hero-wrapper hr {
+    width: 1150px;
   }
 
   /* SKILLS SECTION */
@@ -178,14 +173,6 @@ h4 {
 
 @media (width <= 1200px) {
   /* HERO SECTION */
-  
-  .hero-wrapper {
-    font-size: 25px;
-  }
-
-  .hero-wrapper hr {
-    width: 950px;
-  }
 
   .title {
     font-size: 80px;
@@ -198,6 +185,10 @@ h4 {
   .subtext {
     font-size: 30px;
     width: 750px;
+  }
+
+  .hero-wrapper hr {
+    width: 950px;
   }
 
   /* ABOUT SECTION */
@@ -233,14 +224,6 @@ h4 {
 @media (width <= 1000px) {
   /* HERO SECTION */
   
-  .hero-wrapper {
-    font-size: 20px;
-  }
-
-  .hero-wrapper hr {
-    width: 750px;
-  }
-
   .title {
     font-size: 63px;
   }
@@ -252,6 +235,10 @@ h4 {
   .subtext {
     font-size: 25px;
     width: 600px;
+  }
+
+  .hero-wrapper hr {
+    width: 750px;
   }
 
   /* ABOUT SECTION */
@@ -282,14 +269,6 @@ h4 {
 
 @media (width <= 800px) {
   /* HERO SECTION */
-  
-  .hero-wrapper {
-    font-size: 15px;
-  }
-
-  .hero-wrapper hr {
-    width: 550px;
-  }
 
   .title {
     font-size: 47px;
@@ -302,6 +281,10 @@ h4 {
   .subtext {
     font-size: 20px;
     width: 500px;
+  }
+
+  .hero-wrapper hr {
+    width: 550px;
   }
 
   /* ABOUT SECTION */
@@ -351,14 +334,6 @@ h4 {
 
 @media (width <= 600px) {
   /* HERO SECTION */
-  
-  .hero-wrapper {
-    font-size: 12px;
-  }
-
-  .hero-wrapper hr {
-    width: 450px;
-  }
 
   .title {
     font-size: 38px;
@@ -371,6 +346,10 @@ h4 {
   .subtext {
     font-size: 17px;
     width: 400px;
+  }
+
+  .hero-wrapper hr {
+    width: 450px;
   }
 
   /* ABOUT SECTION */
@@ -395,14 +374,6 @@ h4 {
 @media (width <= 500px) {
   /* HERO SECTION */
   
-  .hero-wrapper {
-    font-size: 19.5px;
-  }
-
-  .hero-wrapper hr {
-    width: 400px;
-  }
-
   .title {
     font-size: 34px;
   }
@@ -414,6 +385,10 @@ h4 {
   .subtext {
     font-size: 15px;
     width: 350px;
+  }
+
+  .hero-wrapper hr {
+    width: 400px;
   }
 
   /* SKILLS SECTION */
