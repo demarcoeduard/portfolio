@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 200px;
-  margin-bottom: 400px;
+  margin-bottom: 250px;
   text-align: center;
 }
 
@@ -50,7 +50,7 @@ span {
   display: flex;
   width: 1100px;
   margin: auto;
-  margin-bottom: 150px;
+  margin-bottom: 250px;
 }
 
 .about-wrapper img {
@@ -95,7 +95,7 @@ span {
   justify-content: center;
   align-items: center;
   column-gap: 100px;
-  margin: 250px;
+  margin: 0px 250px 250px 250px;
 }
 
 .card {
@@ -133,6 +133,59 @@ h4 {
   font-size: 25px;
 }
 
+/* PROJECT SECTION */
+
+.project-wrapper {
+  width: 950px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 250px;
+}
+
+.project-info p {
+  font-size: 28px;
+  color: var(--accent-color);
+  padding: 15px 0px;
+}
+
+.buttons {
+  display: flex;
+  gap: 50px;
+}
+
+.buttons button{
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  border: 1px solid var(--action-color);
+  border-radius: 5px;
+  font-size: 25px;
+  padding: 5px 10px;
+  transition: 0.3s all;
+}
+
+.buttons button:hover {
+  background-color: var(--action-color);
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+.project-web {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: normal;
+  color: var(--accent-color);
+  padding-bottom: 50px;
+}
 
 
 /* MEDIA */
@@ -141,9 +194,6 @@ h4 {
 
 @media (width <= 1400px) {
   /* HERO SECTION */
-  .hero-wrapper {
-    margin-bottom: 350px;
-  }
 
   .title {
     font-size: 98px;
@@ -171,6 +221,10 @@ h4 {
   .card p {
     font-size: 20px;
   }
+
+  h3 {
+    font-size: 45px;
+  }
 }
 
 
@@ -179,7 +233,7 @@ h4 {
   /* HERO SECTION */
 
   .hero-wrapper {
-    margin-bottom: 300px;
+    margin-bottom: 150px;
   }
 
   .title {
@@ -222,8 +276,13 @@ h4 {
   .skills-wrapper {
     flex-direction: column;
     max-width: 500px;
-    margin: 250px auto;
+    margin: auto;
+    margin-bottom: 250px;
     row-gap: 100px;
+  }
+
+  h3 {
+    font-size: 40px;
   }
 }
 
@@ -231,10 +290,6 @@ h4 {
 
 @media (width <= 1000px) {
   /* HERO SECTION */
-
-  .hero-wrapper {
-    margin-bottom: 250px;
-  }
   
   .title {
     font-size: 63px;
@@ -275,16 +330,34 @@ h4 {
   .about-wrapper button {
     margin: 15px 0px 0px 10px;
   }
+
+  h3 {
+    font-size: 35px;
+  }
+
+  /* PROJECT SECTION */
+
+  .project-wrapper {
+    width: 750px;
+  }
+
+  .project-info p {
+    font-size: 20px;
+  }
+
+  .buttons {
+    gap: 40px;
+  }
+
+  .project-web {
+    height: 450px;
+  }
 }
 
 
 
 @media (width <= 800px) {
   /* HERO SECTION */
-
-  .hero-wrapper {
-    margin-bottom: 200px;
-  }
 
   .title {
     font-size: 47px;
@@ -329,7 +402,8 @@ h4 {
   /* SKILLS SECTION */
 
   .skills-wrapper {
-    margin: 100px auto;
+    margin: auto;
+    margin-bottom: 250px;
   }
 
   .card {
@@ -344,16 +418,30 @@ h4 {
   .card p {
     font-size: 15px;
   }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  /* PROJECT SECTION */
+
+  .project-wrapper {
+    width: 550px;
+  }
+
+  .buttons {
+    gap: 35px;
+  }
+
+  .project-web {
+    height: 350px;
+  }
 }
 
 
 
 @media (width <= 600px) {
   /* HERO SECTION */
-
-  .hero-wrapper {
-    margin-bottom: 150px;
-  }
 
   .title {
     font-size: 38px;
@@ -382,10 +470,36 @@ h4 {
     width: 100%;
   }
 
+  .about-wrapper button {
+    font-size: 20px;
+  }
+
   .about-text, .about-subtext {
     width: 300px;
     font-size: 15px;
     padding-top: 10px;
+  }
+
+  /* PROJECT SECTION */
+
+  .project-wrapper {
+    width: 450px;
+  }
+
+  .project-info p {
+    font-size: 15px;
+  }
+
+  .buttons {
+    gap: 30px;
+  }
+
+  .project-info button {
+    font-size: 20px;
+  }
+
+  .project-web {
+    height: 300px;
   }
 }
 
@@ -393,10 +507,6 @@ h4 {
 
 @media (width <= 500px) {
   /* HERO SECTION */
-
-  .hero-wrapper {
-    margin-bottom: 100px;
-  }
 
   .title {
     font-size: 34px;
@@ -418,7 +528,8 @@ h4 {
   /* SKILLS SECTION */
 
   .skills-wrapper {
-    margin: 50px auto;
+    margin: auto;
+    margin-bottom: 250px;
   }
 
   .card {
@@ -432,5 +543,19 @@ h4 {
 
   .card p {
     font-size: 13px;
+  }
+
+  /* PROJECT SECTION */
+
+  .project-wrapper {
+    width: 400px;
+  }
+
+  .buttons {
+    gap: 25px;
+  }
+
+  .project-web {
+    height: 250px;
   }
 }
