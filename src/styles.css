@@ -13,6 +13,11 @@
   --action-color: #87CEEB;
 }
 
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
 .source-code-pro-medium {
   font-family: "Source Code Pro", monospace;
   font-optical-sizing: auto;
