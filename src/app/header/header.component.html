@@ -1,1 +1,67 @@
-<p>header works!</p>
+<header>
+  <a routerLink="home" class="logo pacifico-regular">De Marco Eduard</a>
+  <nav class="large-nav">
+    <a routerLink="home" routerLinkActive="active" class="lato-black">Home</a>
+    <a routerLink="about" routerLinkActive="active" class="lato-black">About</a>
+    <a routerLink="skills" routerLinkActive="active" class="lato-black">Skills</a>
+    <a routerLink="projects" routerLinkActive="active" class="lato-black">Projects</a>
+  </nav>
+  <div class="action-container">
+    <a href="../../assets/De Marco Eduard Resume.pdf" target="_blank" class="lato-black">Resume</a>
+    <a href="mailto:demarcoeduard@gmail.com" class="lato-black">Contact</a>
+  </div>
+  <button class="menu" #menu (click)="onOpen()" aria-expanded="false" aria-controls="small-nav">
+    <svg viewBox="0 0 100 100" width="64">
+      <rect
+        class="top line"
+        width="80"
+        height="10"
+        x="10"
+        y="20"
+        rx="5">
+      </rect>
+      <rect
+        class="middle line"
+        width="80"
+        height="10"
+        x="10"
+        y="45"
+        rx="5">
+      </rect>
+      <rect
+        class="bottom line"
+        width="80"
+        height="10"
+        x="10"
+        y="70"
+        rx="5">
+      </rect>
+    </svg>
+  </button>
+</header>
+<nav class="small-nav" *ngIf="isOpen" @slideInOut>
+  <a routerLink="home" class="lato-black">
+    <p>Home</p>
+    <i class="fa-solid fa-arrow-right"></i>
+  </a>
+  <a routerLink="about" class="lato-black">
+    <p>About</p>
+    <i class="fa-solid fa-arrow-right"></i>
+  </a>
+  <a routerLink="skills" class="lato-black">
+    <p>Skills</p>
+    <i class="fa-solid fa-arrow-right"></i>
+  </a>
+  <a routerLink="projects" class="lato-black">
+    <p>Projects</p>
+    <i class="fa-solid fa-arrow-right"></i>
+  </a>
+  <a href="../../assets/De Marco Eduard Resume.pdf" target="_blank" class="lato-black" (click)="onOpen()">
+    <p>Resume</p>
+    <i class="fa-solid fa-arrow-right up-right"></i>
+  </a>
+  <a href="mailto:demarcoeduard@gmail.com" class="lato-black" (click)="onOpen()">
+    <p>Contact</p>
+    <i class="fa-solid fa-arrow-right up-right"></i>
+  </a>
+</nav>
