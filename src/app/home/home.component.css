@@ -1,0 +1,212 @@
+section {
+  max-width: 1440px;
+  padding: 0px 20px;
+  margin: auto;
+}
+
+.first-row {
+  margin-bottom: 25px;
+}
+
+.first-row, .second-row {
+  display: flex;
+  gap: 25px;
+}
+
+.card {
+  background-color: var(--main-color);
+  height: 300px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 25%);
+}
+
+.action-card {
+  transition: .2s all ease-out;
+}
+
+.action-card:hover {
+  color: var(--action-color);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 25%);
+  cursor: pointer;
+}
+
+.profile-card {
+  color: var(--action-color);
+  width: 700px;
+}
+
+.name {
+  font-size: 70px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.profession {
+  font-size: 35px
+}
+
+.link-card, .nav-card {
+  position: relative;
+}
+
+.link-card {
+  width: 325px;
+}
+
+.nav-card {
+  width: 450px;
+}
+
+i {
+  font-size: 130px;
+}
+
+.source-code-pro-medium {
+  font-size: 40px;
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+/* MEDIA */
+
+@media (width < 1440px) {
+  section {
+    max-width: 1240px;
+  }
+
+  .second-row {
+    gap: 30px;
+  }
+
+  .card {
+    height: 250px;
+    padding: 20px 25px;
+  }
+  
+  .profile-card {
+    width: 600px;
+  }
+  
+  .name {
+    font-size: 60px;
+    margin-top: 30px;
+  }
+  
+  .profession {
+    font-size: 30px
+  }
+  
+  .link-card {
+    width: 275px;
+  }
+  
+  .nav-card {
+    width: 380px;
+  }
+  
+  i {
+    font-size: 115px;
+  }
+  
+  .source-code-pro-medium {
+    font-size: 35px;
+    bottom: 15px;
+    right: 25px;
+  }
+}
+
+@media (width < 1240px) {
+  section {
+    max-width: 1040px;
+  }
+
+  .first-row {
+    margin-bottom: 20px;
+  }
+
+  .first-row, .second-row {
+    gap: 20px;
+  }
+
+  .card {
+    height: 200px;
+    padding: 15px 20px;
+  }
+  
+  .profile-card {
+    width: 460px;
+  }
+  
+  .name {
+    font-size: 50px;
+    margin-top: 20px;
+  }
+  
+  .profession {
+    font-size: 25px
+  }
+  
+  .link-card {
+    width: 250px;
+  }
+  
+  .nav-card {
+    width: 320px;
+  }
+  
+  i {
+    font-size: 100px;
+  }
+  
+  .source-code-pro-medium {
+    font-size: 30px;
+    bottom: 10px;
+    right: 20px;
+  }
+}
+
+@media (width < 1040px) {
+  section {
+    max-width: 440px;
+  }
+
+  .first-row, .second-row {
+    flex-direction: column;
+  }
+
+  .card {
+    height: 100px;
+    padding: 10px;
+  }
+  
+  .profile-card, .link-card, .nav-card {
+    width: 100%;
+  }
+
+  .link-card, .nav-card {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .name {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .profession {
+    font-size: 20px
+  }
+  
+  i {
+    font-size: 80px;
+  }
+  
+  .source-code-pro-medium {
+    position: static;
+  }
+}
