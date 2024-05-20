@@ -1,0 +1,147 @@
+section {
+  max-width: 1440px;
+  padding: 0px 20px;
+  margin: auto;
+  display: flex;
+  gap: 25px;
+}
+
+.card {
+  background-color: var(--main-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 25%);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.link-card {
+  width: 210px;
+  height: 190px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  transition: .2s all ease-out;
+}
+
+.link-card:hover {
+  color: var(--action-color);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 25%);
+}
+
+i {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.source-code-pro-medium {
+  font-size: 35px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-card {
+  width: 1165px;
+  height: 295px;
+  padding: 50px 40px;
+}
+
+.lato-regular {
+  font-size: 40px;
+}
+
+/* MEDIA */
+
+@media (width < 1440px) {
+  section {
+    max-width: 1240px;
+  }
+  
+  .link-card {
+    width: 200px;
+    height: 180px;
+    padding-bottom: 15px;
+  }
+  
+  .about-card {
+    width: 975px;
+    height: 280px;
+  }
+  
+  .lato-regular {
+    font-size: 35px;
+  }
+}
+
+@media (width < 1240px) {
+  section {
+    max-width: 1040px;
+    gap: 20px;
+  }
+
+  .links, .about {
+    gap: 20px;
+  }
+  
+  .link-card {
+    width: 180px;
+    height: 160px;
+  }
+
+  i {
+    font-size: 70px;
+  }
+
+  .source-code-pro-medium {
+    font-size: 30px;
+  }
+  
+  .about-card {
+    width: 800px;
+    height: 250px;
+    padding: 50px 20px;
+  }
+  
+  .lato-regular {
+    font-size: 30px;
+  }
+}
+
+@media (width < 1040px) {
+  section {
+    max-width: 440px;
+    flex-direction: column-reverse;
+  }
+  
+  .link-card {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  i {
+    margin: 0px;
+  }
+  
+  .about-card {
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+  }
+  
+  .lato-regular {
+    font-size: 16px;
+  }
+}
