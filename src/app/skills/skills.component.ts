@@ -8,43 +8,43 @@ import { Component } from '@angular/core';
 export class SkillsComponent {
   skills = [
     {
-      logo: '../../assets/html-logo.png',
+      logo: 'assets/html-logo.png',
       text: 'HTML'
     },
     {
-      logo: '../../assets/css-logo.png',
+      logo: 'assets/css-logo.png',
       text: 'CSS'
     },
     {
-      logo: '../../assets/javascript-logo.png',
+      logo: 'assets/javascript-logo.png',
       text: 'JavaScript'
     },
     {
-      logo: '../../assets/typescript-logo.png',
+      logo: 'assets/typescript-logo.png',
       text: 'TypeScript'
     },
     {
-      logo: '../../assets/angular-logo.png',
+      logo: 'assets/angular-logo.png',
       text: 'Angular'
     },
     {
-      logo: '../../assets/git-logo.png',
+      logo: 'assets/git-logo.png',
       text: 'Git'
     },
     {
-      logo: '../../assets/figma-logo.png',
+      logo: 'assets/figma-logo.png',
       text: 'Figma'
     },
     {
-      logo: '../../assets/sass-logo.png',
+      logo: 'assets/sass-logo.png',
       text: 'Sass'
     },
     {
-      logo: '../../assets/bootstrap-logo.png',
+      logo: 'assets/bootstrap-logo.png',
       text: 'Bootstrap'
     },
     {
-      logo: '../../assets/tailwind-logo.png',
+      logo: 'assets/tailwind-logo.png',
       text: 'Tailwind'
     }
   ]

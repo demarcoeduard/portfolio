@@ -8,14 +8,14 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
   projects = [
     {
-      img: '../../assets/future-foundry.png',
+      img: 'assets/future-foundry.png',
       title: 'Future Foundry',
       link: 'https://demarcoeduard.github.io/future-foundry/',
       skills: ['Angular', 'TypeScript', 'HTML', 'CSS'],
       description: 'Connects businesses with vetted developers through a user-friendly website. It has straightforward forms that simplify communication, while clear design and responsive layout ensure a smooth experience on all devices.'
     },
     {
-      img: '../../assets/hospital-crm.png',
+      img: '/assets/hospital-crm.png',
       title: 'Hospital CRM',
       link: 'https://demarcoeduard.github.io/hospital-crm/',
       skills: ['Angular', 'TypeScript', 'HTML', 'CSS'],
