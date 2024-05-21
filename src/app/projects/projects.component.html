@@ -1,1 +1,19 @@
-<p>projects works!</p>
+<section>
+  <div class="card" *ngFor="let project of projects">
+    <img [src]="project.img" alt="project image">
+    <div class="info">
+      <div class="header">
+        <p class="title raleway-semibold">{{ project.title }}</p>
+        <a [href]="project.link" target="_blank">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+      <div class="skills">
+        <p class="skill-tag  raleway-bold" [ngClass]="skill" *ngFor="let skill of project.skills">{{ skill }}</p>
+      </div>
+      <p class="description lato-regular">
+        {{ project.description }}
+      </p>
+    </div>
+  </div>
+</section>
