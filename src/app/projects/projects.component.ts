@@ -8,6 +8,13 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
   projects = [
     {
+      img: "assets/techdental.png",
+      title: "TechDental",
+      link: "https://demarcoeduard.github.io/techdental/",
+      skills: ["Angular", "TypeScript", "HTML", "Bootstrap"],
+      description: "Minimalist, fully responsive landing page designed using Bootstrap to ensure cross-device compatibility. It includes essential sections for an intuitive user experience. Additionally, integrates functional elements to enhance user interaction."
+    },
+    {
       img: "assets/future-foundry.png",
       title: "Future Foundry",
       link: "https://demarcoeduard.github.io/future-foundry/",
