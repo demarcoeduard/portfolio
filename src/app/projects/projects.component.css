@@ -3,7 +3,9 @@ section {
   padding: 0px 20px;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 100px;
 }
 
 .card {
@@ -101,7 +103,6 @@ i:hover {
 @media (width < 1240px) {
   section {
     width: fit-content;
-    gap: 100px;
     flex-direction: column;
   }
 }
