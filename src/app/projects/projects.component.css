@@ -80,6 +80,10 @@ i:hover {
   background-color: rgba(41, 101, 241, 75%);
 }
 
+.Bootstrap {
+  background-color: rgba(137, 18, 252, 75%);
+}
+
 .description {
   font-size: 20px;
 }
