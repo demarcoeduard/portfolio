@@ -2,6 +2,7 @@ section {
   max-width: 1440px;
   padding: 0px 20px;
   margin: auto;
+  margin-bottom: 100px;
   display: flex;
   gap: 25px;
 }
@@ -142,6 +143,7 @@ i {
   }
   
   .lato-regular {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.3;
   }
 }

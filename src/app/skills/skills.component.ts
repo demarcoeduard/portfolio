@@ -1,9 +1,18 @@
+import { animate, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css']
+  styleUrls: ['./skills.component.css'],
+  animations: [
+    trigger('fade', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('0.20s ease-out', style({ opacity: 1}))
+      ])
+    ])
+  ]
 })
 export class SkillsComponent {
   skills = [

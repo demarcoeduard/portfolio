@@ -1,4 +1,4 @@
-<section>
+<section @fade>
   <div class="card" *ngFor="let project of projects">
     <img [src]="project.img" alt="project image">
     <div class="info">
@@ -9,7 +9,7 @@
         </a>
       </div>
       <div class="skills">
-        <p class="skill-tag  raleway-bold" [ngClass]="skill" *ngFor="let skill of project.skills">{{ skill }}</p>
+        <p class="skill-tag  raleway-bold" [ngClass]="skill" *ngFor="let skill of project.skills">#{{ skill }}</p>
       </div>
       <p class="description lato-regular">
         {{ project.description }}
