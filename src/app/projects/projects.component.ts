@@ -17,6 +17,13 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
   projects = [
     {
+      img: "assets/finance-dashboard.png",
+      title: "Finance Dashboard",
+      link: "https://demarcoeduard.github.io/finance-dashboard/",
+      skills: ["Angular", "TypeScript", "CSS"],
+      description: "Manages personal finances in a centralized dashboard, enhancing financial control. Users can effortlessly add, edit and track accounts and transactions. Real-time updates maintain data accuracy, while the responsive design ensures seamless use across all devices."
+    },
+    {
       img: "assets/techdental.png",
       title: "TechDental",
       link: "https://demarcoeduard.github.io/techdental/",
